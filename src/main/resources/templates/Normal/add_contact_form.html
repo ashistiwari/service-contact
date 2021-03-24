@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<section>
+  <div class="card">
+  
+  		
+  		<div class="card-body">
+  		
+  			<div class="text-center">
+  			
+  				<div class="container-fluid">
+  				
+  					<div class="row">
+  					
+  					<div class="col-md-10 offset-md-1">
+  					
+  					     <form action="#" th:object="${contact}"
+  					     enctype="multipart/form-data" method="post"
+  					     th:action="@{/user/process-contact}" class="mt-2">
+  					     
+  					     
+  					     <!-- first name -->
+  					     
+  					     <div class="input-group">
+  					     
+  					     
+  					     		<div class="input-group-prepend">
+  					     		
+  					     			<div class="input-group-text ">
+  					     			
+  					     				<i class="fa fa-plus"></i>
+  					     				
+  					     			</div>
+  					     		
+  					     		</div>
+  					     		<input type="text" id="firstName" name="name" placeholder="Enter Here" class="form-control">
+  					     
+  					     </div>
+  					     <!--second name  -->
+  					     
+  					     <div class="input-group mt-3">
+  					     
+  					     
+  					     		<div class="input-group-prepend">
+  					     		
+  					     			<div class="input-group-text ">
+  					     			
+  					     				<i class="fas fa-user-alt"></i>
+  					     				
+  					     			</div>
+  					     		
+  					     		</div>
+  					     		<input type="text" id="secondName" name="secondName" placeholder="Enter Here" class="form-control">
+  					     
+  					     </div>
+  					     
+  					     <!-- phone field -->
+  					     <div class="input-group mt-3">
+  					     
+  					     
+  					     		<div class="input-group-prepend">
+  					     		
+  					     			<div class="input-group-text ">
+  					     			
+  					     				<i class="fas fa-phone"></i>
+  					     				
+  					     			</div>
+  					     		
+  					     		</div>
+  					     		<input type="number" id="phone" name="phone" placeholder="Enter Here" class="form-control">
+  					     
+  					     </div>
+  					     
+  					     <!-- email -->
+  					     
+  					     <div class="input-group mt-3">
+  					     
+  					     
+  					     		<div class="input-group-prepend">
+  					     		
+  					     			<div class="input-group-text ">
+  					     			
+  					     				@
+  					     				
+  					     			</div>
+  					     		
+  					     		</div>
+  					     		<input type="email" id="email" name="email" placeholder="Enter Here" class="form-control">
+  					     
+  					     </div>
+  					     
+  					     <!--work  -->
+  					     <div class="input-group mt-3">
+  					     
+  					     
+  					     		<div class="input-group-prepend">
+  					     		
+  					     			<div class="input-group-text ">
+  					     			
+  					     			<i class="fa fa-briefcase"></i>
+  					     				
+  					     			</div>
+  					     		
+  					     		</div>
+  					     		<input type="text" id="work" name="work" placeholder="Enter Here" class="form-control">
+  					     
+  					     </div>
+  					     
+  					     <!--  description-->
+  					   <div class="form-group mt-3">
+  					   <textarea name="description" id="description" rows="10" class="form-control" placeholder="Enter here"></textarea>
+  					   
+  					   
+  					   </div>
+  					   
+  					   <!--contact image  -->
+  					   
+  					   
+  					   <div class="custom-file mt-3">
+  					   
+  					   <input type="file" name="profileImage">
+  					   
+  					   </div>
+  					   
+  					   
+  					   <div class="container text-center mt-3">
+  					   
+  					   <button class="btn btn-outline-primary">Save Contact</button>
+  					   
+  					   </div>
+  					   
+  					   
+  					     
+  					     
+  					  
+  					     </form>
+  					
+  					</div>
+  					
+  					</div>
+  					
+  				</div>
+  			
+  			</div>
+  		
+  		</div>
+  
+  </div>
+</section>
+</body>
+</html>
